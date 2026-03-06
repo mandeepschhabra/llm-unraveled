@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Lesson3Context, FRAME_INDEX, type Lesson3Frame } from './lesson3State'
+import { Lesson3Context, type Lesson3Frame } from './lesson3State'
 import Lesson3Progress from './Lesson3Progress'
 import Frame1Gateway from './Frame1Gateway'
 import Frame2Profile from './Frame2Profile'

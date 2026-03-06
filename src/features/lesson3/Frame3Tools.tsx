@@ -42,7 +42,6 @@ export default function Frame3Tools({ subStep }: Props) {
   const [cycleStage, setCycleStage] = useState(-1)
   const [activeTool, setActiveTool] = useState<string | undefined>()
   const [pressedTools, setPressedTools] = useState<string[]>([])
-  const [chainIdx, setChainIdx] = useState(-1)
   const cancelRef = useRef(false)
 
   useEffect(() => {
@@ -50,7 +49,6 @@ export default function Frame3Tools({ subStep }: Props) {
     setCycleStage(-1)
     setActiveTool(undefined)
     setPressedTools([])
-    setChainIdx(-1)
     const id = setTimeout(() => { cancelRef.current = false }, 50)
     return () => { clearTimeout(id); cancelRef.current = true }
   }, [subStep])
@@ -85,7 +83,6 @@ export default function Frame3Tools({ subStep }: Props) {
       for (let i = 0; i < TOOL_CHAIN.length; i++) {
         if (cancelRef.current) return
         const step = TOOL_CHAIN[i]
-        setChainIdx(i)
         setActiveTool(step.tool)
         setCycleStage(step.stage)
         await sleep(350)

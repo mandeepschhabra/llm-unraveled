@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Lesson2Context, FRAME_INDEX, type Lesson2Frame } from './lesson2State'
+import { Lesson2Context, type Lesson2Frame } from './lesson2State'
 import Lesson2Progress from './Lesson2Progress'
 import Frame1Classroom from './Frame1Classroom'
 import Frame2MoE from './Frame2MoE'
@@ -9,8 +9,6 @@ import Frame4Patterns from './Frame4Patterns'
 import Frame5Inference from './Frame5Inference'
 import Frame6Finale from './Frame6Finale'
 import { COLORS } from '../../utils/colors'
-
-type StepKind = 'frame' | 'bridge'
 
 interface FrameStep {
   kind: 'frame'

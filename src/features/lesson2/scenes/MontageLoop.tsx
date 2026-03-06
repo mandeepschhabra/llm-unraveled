@@ -4,13 +4,12 @@ import { COLORS } from '../../../utils/colors'
 
 interface Props {
   running?: boolean
-  maxIter?: number
   onComplete?: () => void
 }
 
 const MILESTONES = [1, 5, 10, 50, 100, 500, 1000, 5000, 10000]
 
-export default function MontageLoop({ running = false, maxIter = 10000, onComplete }: Props) {
+export default function MontageLoop({ running = false, onComplete }: Props) {
   const [iterIdx, setIterIdx] = useState(0)
   const [adjustSize, setAdjustSize] = useState(1.0)
   const cancelRef = useRef(false)

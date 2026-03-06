@@ -9,10 +9,6 @@ interface Props {
 }
 
 export default function RouterRobot({ x = 0, y = 0, activeTargets = [], total = 8 }: Props) {
-  const armAngle = activeTargets.length > 0
-    ? -30 + (activeTargets[0] / (total - 1)) * 60
-    : 0
-
   return (
     <g transform={`translate(${x}, ${y})`}>
       {/* Body */}

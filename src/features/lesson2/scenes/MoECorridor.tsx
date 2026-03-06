@@ -102,7 +102,7 @@ export default function MoECorridor({
             fill={COLORS.neonCyan} fontSize={7} fontFamily="monospace">
             MERGE
           </text>
-          {activeExperts.map((ei, i) => {
+          {activeExperts.map((ei) => {
             const col = ei % cols
             const row = Math.floor(ei / cols)
             const ex = 90 + col * chamberW

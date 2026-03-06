@@ -5,7 +5,6 @@ import GoldComparison from './scenes/GoldComparison'
 import BackwardWave from './scenes/BackwardWave'
 import SurpriseMeter from '../loss/SurpriseMeter'
 import Soundboard from '../gradient/Soundboard'
-import { COLORS } from '../../utils/colors'
 
 interface Props { subStep: number }
 
