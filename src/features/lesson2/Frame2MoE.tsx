@@ -1,9 +1,15 @@
+// TODO(code-graph) [duplication#05]: NARRATIONS array
+// TODO(code-graph) [duplication#12]: NARRATIONS array
 import { useEffect, useState, useRef, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import NarrationBox from '../../components/layout/NarrationBox'
 import MoECorridor from './scenes/MoECorridor'
 import { COLORS, beadColor } from '../../utils/colors'
 
+/**
+ * @typedef {Object} Props
+ * @property {number} subStep - The current step of the lesson.
+ */
 interface Props { subStep: number }
 
 const NARRATIONS = [

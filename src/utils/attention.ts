@@ -2,6 +2,7 @@
 // Deterministic (seeded PRNG) so the same tokens always produce the same patterns.
 // Each head gets its own independent seed → genuinely different attention patterns.
 
+// TODO(code-graph) [testing#04]: Code path is not exercised by any test
 function mulberry32(seed: number): () => number {
   return () => {
     seed |= 0
