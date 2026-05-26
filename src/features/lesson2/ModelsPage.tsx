@@ -4,6 +4,9 @@
 // TODO(code-graph) [complexity#03]: Redundant state management
 // TODO(code-graph) [coupling#07]: Tight coupling between components
 // TODO(code-graph) [testing#11]: Code path is not exercised by any test
+// TODO(code-graph) [complexity#03]: Redundant state management
+// TODO(code-graph) [coupling#07]: Tight coupling between components
+// TODO(code-graph) [testing#11]: Code path is not exercised by any test
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Lesson2Context, type Lesson2Frame } from './lesson2State'
