@@ -6,21 +6,6 @@ import BackwardWave from './scenes/BackwardWave'
 import SurpriseMeter from '../loss/SurpriseMeter'
 import Soundboard from '../gradient/Soundboard'
 
-/**
- * Props for Frame3Gradients component.
- *
- * @param subStep - The current step in the lesson, which determines the content and behavior of the component.
- */
-/**
- * Props for Frame3Gradients component.
- *
- * @param subStep - The current step in the lesson, which determines the content and behavior of the component.
- */
-/**
- * Props for Frame3Gradients component.
- *
- * @param subStep - The current step in the lesson, which determines the content and behavior of the component.
- */
 interface Props { subStep: number }
 
 const NARRATIONS = [

@@ -1,12 +1,3 @@
-// TODO(code-graph) [complexity#03]: Redundant state management
-// TODO(code-graph) [coupling#07]: Tight coupling between components
-// TODO(code-graph) [testing#11]: Code path is not exercised by any test
-// TODO(code-graph) [complexity#03]: Redundant state management
-// TODO(code-graph) [coupling#07]: Tight coupling between components
-// TODO(code-graph) [testing#11]: Code path is not exercised by any test
-// TODO(code-graph) [complexity#03]: Redundant state management
-// TODO(code-graph) [coupling#07]: Tight coupling between components
-// TODO(code-graph) [testing#11]: Code path is not exercised by any test
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Lesson2Context, type Lesson2Frame } from './lesson2State'
@@ -36,7 +27,7 @@ interface BridgeStep {
 
 type Step = FrameStep | BridgeStep
 
-const bridgeSteps: Record<string, Omit<BridgeStep, 'kind' | 'fromFrame' | 'toFrame'>> = {
+const BRIDGES: Record<string, Omit<BridgeStep, 'kind' | 'fromFrame' | 'toFrame'>> = {
   'classroom→moe':       { text: 'Zooming into PacMan\'s factory...', icon: '🔬', mood: 'zoomIn' },
   'moe→gradients':       { text: 'Back to the classroom for grading...', icon: '📋', mood: 'zoomOut' },
   'gradients→patterns':  { text: 'Thousands of rounds later...', icon: '⏩', mood: 'fastForward' },
