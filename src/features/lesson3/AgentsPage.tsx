@@ -1,3 +1,6 @@
+// TODO(code-graph) [complexity#10]: Redundant state management
+// TODO(code-graph) [complexity#10]: Redundant state management
+// TODO(code-graph) [complexity#10]: Redundant state management
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Lesson3Context, type Lesson3Frame } from './lesson3State'
