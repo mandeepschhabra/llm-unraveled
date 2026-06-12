@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react'
+import { createContext } from 'react'
 
 export type Lesson2Frame =
   | 'classroom'
@@ -30,8 +30,3 @@ export interface Lesson2State {
 
 export const Lesson2Context = createContext<Lesson2State | null>(null)
 
-export function useLesson2(): Lesson2State {
-  const ctx = useContext(Lesson2Context)
-  if (!ctx) throw new Error('useLesson2 must be used within Lesson2Provider')
-  return ctx
-}
